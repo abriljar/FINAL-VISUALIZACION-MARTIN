@@ -141,8 +141,8 @@
 
 		svg.append("polygon")
 			.attr("points", points.map((d) => d.join(",")).join(" "))
-			.style("fill", "rgba(217, 2, 99, 0.5)")
-			.style("stroke", "#d90263")
+			.style("fill", "rgba(249, 139, 11, 0.5)")
+			.style("stroke", "#F98B0B")
 			.style("stroke-width", 2);
 
 		// Dibujar puntos interactivos
@@ -151,7 +151,7 @@
 				.attr("cx", x)
 				.attr("cy", y)
 				.attr("r", 5)
-				.style("fill", "#d90263")
+				.style("fill", "#F98B0B")
 				.style("cursor", "pointer")
 				.on("mouseover", () => {
 					tooltip
