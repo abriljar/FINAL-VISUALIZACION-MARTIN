@@ -183,17 +183,26 @@
 			currentSongData = songData[songId];
 			createRadarChart(currentSongData);
 			document.getElementById("current-song").innerHTML =
-				`<p>${songId} - ${songData[songId].Artista}</p>`;
+			`<p>${songId} - ${songData[songId].Artista}</p>`;
+
+			
+			const audioPlayer = document.getElementById("audio-player");
+			audioPlayer.src = `/music/${songId.toLowerCase().replace(/\s+/g, "-")}.mp3`;
+			audioPlayer.volume = 0.5;
+			audioPlayer.play();
 		}
 	};
 </script>
 
 <!-- Estructura contenido HTML -->
 <main>
+
+	<button id="pause-button" onclick="document.getElementById('audio-player').pause()">PAUSAR</button>
+	<audio id="audio-player" hidden></audio>
+
 	<h1>Entre discos y datos: <br /> sintonías que nos conectan</h1>
 	<h4>
-		Descubrí cómo nuestras canciones favoritas se entrelazan, comparando
-		nuestros ritmos, <br /> géneros y momentos musicales más escuchados del año.
+		Navegá por las canciones más escuchadas por Abril y Martín en el 2023.<br>Al hacer click en un disco, se grafican diferentes atributos musicales como acústica, bailabilidad, vivacidad, y más.
 	</h4>
 	<div class="botones-filtro">
 		<button
@@ -361,6 +370,28 @@
 <!-- Estilos CSS -->
 
 <style>
+
+	#pause-button{
+	font-family: Remora Sans W5;
+	font-weight: 250;
+	font-size: 10px;
+	background-color: #9747FF;
+	color: white;
+	border-radius: 20px;
+	cursor: pointer;
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+	margin: 20px;
+	position: absolute;
+	top: 20px; 
+    left: 20px;
+	text-decoration: none;
+	}
+
+	#pause-button:hover{
+		background-color: #6a2fb8;
+	}
+
 	.pua {
 		width: 35%;
 		height: 60%;
