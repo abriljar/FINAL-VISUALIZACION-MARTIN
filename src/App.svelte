@@ -367,9 +367,29 @@
 	</div>
 </main>
 
+<footer> Abril Jarque    |    Martín De Luca
+	<br> <br>Trabajo Final   |   Visualización de Datos 2024
+</footer>
+
 <!-- Estilos CSS -->
 
 <style>
+
+footer{
+		font-family: Bebas Neue;
+		font-size: 20px;
+		background-color: #6a2fb8;
+		color: white;
+		position: absolute; 
+		left: 0;
+		width: 100vw; 
+		height: 15vh; 
+		text-align: center;
+		margin-top: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 	#pause-button{
 	font-family: Remora Sans W5;
