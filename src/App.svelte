@@ -195,6 +195,13 @@
 </script>
 
 <!-- Estructura contenido HTML -->
+
+<head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+	</style>
+</head>
+
 <main>
 
 	<button id="pause-button" onclick="document.getElementById('audio-player').pause()">PAUSAR</button>
@@ -375,8 +382,18 @@
 
 <style>
 
+@font-face {
+	font-family: 'HelveticaNeueLTStd-Lt'; 
+            src: url("/fonts/HelveticaNeueLTStd-Lt.otf");
+        }
+
+        @font-face {
+            font-family: 'RemoraSans-W5Medium';
+            src: url('/fonts/RemoraSans-W5Medium.otf');
+}
+
 footer{
-		font-family: Bebas Neue;
+		font-family: "Bebas Neue";
 		font-size: 20px;
 		background-color: #6a2fb8;
 		color: white;
@@ -392,7 +409,7 @@ footer{
 	}
 
 	#pause-button{
-	font-family: Remora Sans W5;
+	font-family: "RemoraSans-W5Medium";
 	font-weight: 250;
 	font-size: 10px;
 	background-color: #9747FF;
@@ -479,7 +496,7 @@ footer{
 		text-align: center;
 		font-size: 30px;
 		color: white;
-		font-family: Bebas Neue;
+		font-family: "Bebas Neue";
 		font-weight: bold;
 	}
 
@@ -504,7 +521,7 @@ footer{
 	}
 
 	.botones-filtro button {
-		font-family: Remora Sans W5;
+		font-family: "RemoraSans-W5Medium";
 		font-weight: 250;
 		font-size: 15px;
 		background-color: transparent;
@@ -528,35 +545,35 @@ footer{
 	}
 
 	h1 {
-		font-family: Remora Sans W5;
+		font-family: "RemoraSans-W5Medium";
 		margin: 0;
 		text-align: center;
 		font-size: 45px;
 	}
 
 	h2 {
-		font-family: Remora Sans W5;
+		font-family: "RemoraSans-W5Medium";
 		margin-top: 80px;
 		text-align: center;
 		font-size: 30px;
 	}
 
 	h4 {
-		font-family: Helvetica Neue LT Std;
+		font-family: "HelveticaNeueLTStd-Lt";
 		font-weight: lighter;
 		text-align: center;
 		font-size: 20px;
 	}
 
 	p {
-		font-family: Helvetica Neue LT Std;
+		font-family: "HelveticaNeueLTStd-Lt";
 		font-weight: lighter;
 		text-align: center;
 		font-size: 17px;
 	}
 
 	.mi-boton {
-		font-family: Remora Sans W5;
+		font-family: "RemoraSans-W5Medium";
 		font-weight: 250;
 		font-size: 15px;
 		background-color: #9747ff;
